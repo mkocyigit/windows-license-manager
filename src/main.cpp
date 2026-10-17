@@ -1187,7 +1187,7 @@ static LRESULT CALLBACK TypesProc(HWND h, UINT msg, WPARAM wp, LPARAM lp) {
             SendMessageW(s->list, LB_ADDSTRING, 0, (LPARAM)t.c_str());
         }
         s->edit = CreateWindowExW(WS_EX_CLIENTEDGE, L"EDIT", L"", WS_CHILD | WS_VISIBLE | WS_VSCROLL | ES_MULTILINE | ES_READONLY | ES_AUTOVSCROLL,
-                                  0, 0, 10, 10, h, (HMENU)2, nullptr, nullptr);
+                                  0, 0, 10, 10, h, (HMENU)3, nullptr, nullptr);
         SendMessageW(s->edit, WM_SETFONT, (WPARAM)g_mono, TRUE);
         SendMessageW(s->edit, EM_SETMARGINS, EC_LEFTMARGIN | EC_RIGHTMARGIN, MAKELPARAM(S(14), S(14)));
         s->close = CreateWindowW(L"BUTTON", T(L"Kapat"), WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_DEFPUSHBUTTON, 0, 0, 10, 10, h, (HMENU)IDCANCEL, nullptr, nullptr);
@@ -1200,7 +1200,7 @@ static LRESULT CALLBACK TypesProc(HWND h, UINT msg, WPARAM wp, LPARAM lp) {
     case WM_SIZE: {
         if (!s) return 0;
         RECT rc; GetClientRect(h, &rc);
-        int lw = S(320), top = S(40), bot = S(54);
+        int lw = max(S(260), rc.right * 3 / 10), top = S(40), bot = S(54);
         SetWindowPos(s->lbl, nullptr, S(14), S(10), rc.right - S(28), S(24), SWP_NOZORDER);
         SetWindowPos(s->list, nullptr, S(12), top, lw, rc.bottom - top - bot, SWP_NOZORDER);
         SetWindowPos(s->edit, nullptr, S(12) + lw + S(10), top, rc.right - lw - S(34), rc.bottom - top - bot, SWP_NOZORDER);
@@ -1238,7 +1238,7 @@ static void ShowTypes() {
     TypesState s = {};
     RECT pr; GetWindowRect(g_main, &pr);
     HWND w = CreateWindowExW(0, L"LYTypes", T(L"Lisans Türleri"), WS_OVERLAPPEDWINDOW,
-                             pr.left + S(30), pr.top + S(30), S(1180), S(740), g_main, nullptr, GetModuleHandleW(nullptr), &s);
+                             pr.left + ((pr.right - pr.left) - S(1280)) / 2, pr.top + ((pr.bottom - pr.top) - S(820)) / 2, S(1280), S(820), g_main, nullptr, GetModuleHandleW(nullptr), &s);
     EnableWindow(g_main, FALSE);
     ShowWindow(w, SW_SHOW);
     MSG m;
@@ -1527,6 +1527,12 @@ int WINAPI wWinMain(HINSTANCE hi, HINSTANCE, PWSTR, int show) {
     g_main = CreateWindowW(wc.lpszClassName, T(L"Windows Lisans Yöneticisi"), WS_OVERLAPPEDWINDOW,
                            CW_USEDEFAULT, CW_USEDEFAULT, S(1040), S(700), nullptr, nullptr, hi, nullptr);
     SendMessageW(g_main, WM_SETICON, ICON_SMALL, (LPARAM)LoadImageW(hi, MAKEINTRESOURCEW(1), IMAGE_ICON, GetSystemMetrics(SM_CXSMICON), GetSystemMetrics(SM_CYSMICON), 0));
+    {
+        RECT wr, wa; GetWindowRect(g_main, &wr);
+        SystemParametersInfoW(SPI_GETWORKAREA, 0, &wa, 0);
+        SetWindowPos(g_main, nullptr, wa.left + ((wa.right - wa.left) - (wr.right - wr.left)) / 2,
+                     wa.top + ((wa.bottom - wa.top) - (wr.bottom - wr.top)) / 2, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+    }
     ShowWindow(g_main, show);
     UpdateWindow(g_main);
     ShowInfo(false, L"");
