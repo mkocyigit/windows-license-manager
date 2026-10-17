@@ -1,5 +1,7 @@
 # Windows License Manager
 
+**English** | [Türkçe](README.tr.md)
+
 <p align="center"><img src="docs/icon.png" width="128" alt="icon"></p>
 
 A graphical Windows licensing tool written in C++ (Win32 + WMI). It reimplements what `slmgr.vbs` does,
