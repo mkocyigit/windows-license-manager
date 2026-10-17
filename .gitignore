@@ -1,0 +1,22 @@
+# Build output
+build/
+*.exe
+*.obj
+*.res
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Backups created by the app must never be committed (they contain license data)
+LisansYedek_*/
+**/info.txt
+**/bilgi.txt
+**/spp.reg
+*.dat
+
+# Editor / OS
+.vs/
+.vscode/
+*.bak*
+Thumbs.db

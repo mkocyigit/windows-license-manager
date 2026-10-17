@@ -1,0 +1,201 @@
+SoftwareLicensingService bulunamadı.	SoftwareLicensingService not found.
+Etkinleştirme kimliği bulunamadı: 	Activation ID not found:
+Başarısız: 	Failed:
+Lisanssız	Unlicensed
+Lisanslı	Licensed
+İlk tolerans süresi	Initial grace period
+Ek tolerans süresi	Additional grace period
+Orijinal olmayan tolerans süresi	Non-genuine grace period
+Bildirim	Notification
+Uzatılmış tolerans süresi	Extended grace period
+Bilinmiyor	Unknown
+Makine kalıcı olarak etkinleştirildi.	The machine is permanently activated.
+Etkinleştirme sona eriyor: 	Activation expires:
+Tolerans süresi bitiyor: 	Grace period ends:
+Deneme sürümü bitiyor: 	Evaluation ends:
+Lisanslı değil.	Not licensed.
+Yazılım Lisans Servisi sürümü: 	Software Licensing Service version:
+Eşleşen lisans bulunamadı.\n	No matching license found.\n
+Ad: 	Name:
+Açıklama: 	Description:
+Etkinleştirme Kimliği: 	Activation ID:
+Uygulama Kimliği: 	Application ID:
+Genişletilmiş PID: 	Extended PID:
+Ürün Anahtarı Kanalı: 	Product Key Channel:
+Kurulum Kimliği (IID): 	Installation ID (IID):
+Kısmi Ürün Anahtarı: 	Partial Product Key:
+Lisans Durumu: 	License Status:
+Bildirim Nedeni: 	Notification Reason:
+%lld dakika (%lld gün)	%lld minutes (%lld days)
+Kalan Tolerans: 	Remaining Grace:
+Yapılandırılmış KMS: 	Configured KMS:
+BIOS/OEM Ürün Anahtarı: 	BIOS/OEM Product Key:
+İstemci Makine Kimliği: 	Client Machine ID:
+Anahtarı yüklü bir Windows lisansı bulunamadı	No Windows license with an installed key was found
+Tamam	OK
+İptal	Cancel
+Etkinleştirme Kimliği (isteğe bağlı, boş = varsayılan):	Activation ID (optional, empty = default):
+Bitiş Tarihi (/xpr)	Expiration Date (/xpr)
+Ürün Anahtarı Yükle (/ipk)	Install Product Key (/ipk)
+Ürün anahtarı (XXXXX-XXXXX-XXXXX-XXXXX-XXXXX):	Product key (XXXXX-XXXXX-XXXXX-XXXXX-XXXXX):
+Ürün anahtarı başarıyla yüklendi.	Product key installed successfully.
+Etkinleştir (/ato)	Activate (/ato)
+Etkinleştiriliyor: 	Activating:
+  Başarılı.	  Succeeded.
+Anahtarı Kaldır (/upk)	Uninstall Key (/upk)
+Yüklü ürün anahtarı kaldırılacak. Devam edilsin mi?	The installed product key will be removed. Continue?
+Onay	Confirm
+ürün anahtarı kaldırıldı.	product key uninstalled.
+Ürün anahtarı kayıt defterinden silinecek (lisans kalır). Devam edilsin mi?	The product key will be removed from the registry (the license stays). Continue?
+Ürün anahtarı kayıt defterinden temizlendi.	Product key cleared from the registry.
+KMS Sunucusu Ayarla (/skms)	Set KMS Server (/skms)
+KMS sunucusu (ad[:port]):	KMS server (name[:port]):
+KMS makine adı 	KMS machine name set to
+ olarak ayarlandı.	.
+KMS Ayarını Temizle (/ckms)	Clear KMS Setting (/ckms)
+KMS makine adı ve bağlantı noktası temizlendi.	KMS machine name and port cleared.
+KMS Arama Etki Alanı (/skms-domain)	KMS Lookup Domain (/skms-domain)
+Etki alanı (FQDN):	Domain (FQDN):
+KMS arama etki alanı 	KMS lookup domain set to
+KMS Arama Etki Alanını Temizle (/ckms-domain)	Clear KMS Lookup Domain (/ckms-domain)
+KMS arama etki alanı temizlendi.	KMS lookup domain cleared.
+Etkinleştirme Türü (/act-type)	Activation Type (/act-type)
+Tür (0 = hepsi, 1 = AD, 2 = KMS, 3 = Token):	Type (0 = all, 1 = AD, 2 = KMS, 3 = Token):
+Geçersiz değer: 0-3 arası olmalı.	Invalid value: must be between 0 and 3.
+Toplu lisans etkinleştirme türü ayarlandı.	Volume activation type set.
+Kurulum Kimliği (/dti)	Installation ID (/dti)
+  Etkinleştirme Kimliği: 	  Activation ID:
+  Kurulum Kimliği: 	  Installation ID:
+Onay Kimliği Gir (/atp)	Enter Confirmation ID (/atp)
+Onay kimliği (Confirmation ID):	Confirmation ID:
+onay kimliği kabul edildi.	confirmation ID accepted.
+Windows için değerlendirme/tolerans süresi sıfırlanacak (rearm). Devam edilsin mi?	The evaluation/grace period for Windows will be reset (rearm). Continue?
+Komut başarıyla tamamlandı. Değişikliğin etkili olması için bilgisayarı yeniden başlatın.	Command completed successfully. Restart the computer for the change to take effect.
+Uygulama Rearm (/rearm-app)	Application Rearm (/rearm-app)
+Uygulama kimliği:	Application ID:
+Komut başarıyla tamamlandı. Değişikliğin etkili olması için yeniden başlatın.	Command completed successfully. Restart for the change to take effect.
+SKU Rearm (/rearm-sku)	SKU Rearm (/rearm-sku)
+Etkinleştirme kimliği (SKU):	Activation ID (SKU):
+Komut başarıyla tamamlandı. Yeniden başlatın.	Command completed successfully. Please restart.
+Dosya okunamadı.	The file could not be read.
+Lisans dosyaları (*.xrm-ms)	License files (*.xrm-ms)
+Tüm dosyalar	All files
+Lisans dosyası yüklendi: 	License file installed:
+Sistem lisans dosyaları yeniden yükleniyor...\n	Reinstalling system license files...\n
+Tamamlandı. Başarılı: %d, başarısız: %d\n	Done. Succeeded: %d, failed: %d\n
+Yazılım Koruma hizmeti (sppsvc) durduruluyor...\n	Stopping the Software Protection service (sppsvc)...\n
+Hizmet durdurulamadı: 	Could not stop the service:
+Lisans deposu: %d dosya, profil: %d dosya kopyalandı.\n	License store: %d files, profile: %d files copied.\n
+Kopyalanamayan öğe var, ilki: 	Some items could not be copied, first:
+Uyarı: lisans deposu klasörü bulunamadı.\n	Warning: license store folder not found.\n
+Uyarı: kayıt defteri dışa aktarılamadı.\n	Warning: the registry could not be exported.\n
+Uyarı: bilgi dosyası yazılamadı.\n	Warning: the info file could not be written.\n
+Hizmet yeniden başlatıldı.\n	Service restarted.\n
+Uyarı: hizmet yeniden başlatılamadı: 	Warning: the service could not be restarted:
+Geri yüklenecek yedeği listeden seçin (en yeni üstte):	Select the backup to restore from the list (newest first):
+Geri yüklenecek yedeği seçin	Select the backup to restore
+(bu bilgisayar)	(this computer)
+(başka bilgisayar)	(another computer)
+Yedeğin kaydedileceği klasörü seçin	Select the folder where the backup will be saved
+Yedekleme hedefi: 	Backup destination:
+\nYedekleme başarıyla tamamlandı.\n	\nBackup completed successfully.\n
+\nYedekleme tamamlandı, ancak uyarılar var (yukarıya bakın).\n	\nBackup finished, but there are warnings (see above).\n
+Yedeklerin bulunduğu klasörü seçin (yedek alırken seçtiğiniz klasör)	Select the folder that contains the backups (the folder you chose when backing up)
+Bu klasörde lisans yedeği bulunamadı.\n\nBeklenen düzen: <klasör>\\<Bilgisayar Adı>\\<Tarih>	No license backup was found in this folder.\n\nExpected layout: <folder>\\<Computer Name>\\<Date>
+Yedek bulunamadı	No backup found
+Yedek bilgileri:\n\n  Bilgisayar: 	Backup details:\n\n  Computer:
+\n  Sürüm: 	\n  Version:
+\n  Tarih: 	\n  Date:
+\n  Durum: 	\n  Status:
+DİKKAT: Bu yedek BU bilgisayara ait görünmüyor (makine kimliği farklı). Lisans verisi donanıma bağlıdır; geri yükleme büyük olasılıkla çalışmaz ve mevcut lisansı bozabilir.\n\n	WARNING: This backup does not seem to belong to THIS computer (different machine ID). License data is tied to the hardware; restoring will most likely not work and may break the current license.\n\n
+Mevcut lisans deposunun üzerine yazılacak. Önce otomatik olarak mevcut hâl yedeklenecek. Devam edilsin mi?	The current license store will be overwritten. The current state will be backed up automatically first. Continue?
+Geri yüklemeyi onayla	Confirm restore
+Geri yükleme öncesi mevcut hâl yedekleniyor:\n	Backing up the current state before restoring:\n
+Mevcut hâl yedeklenirken sorun oluştu. Yine de geri yüklemeye devam edilsin mi?	There was a problem backing up the current state. Continue with the restore anyway?
+Uyarı	Warning
+\nİptal edildi.\n	\nCancelled.\n
+\nGeri yükleniyor...\nYazılım Koruma hizmeti durduruluyor...\n	\nRestoring...\nStopping the Software Protection service...\n
+Depo: %d dosya, profil: %d dosya geri yüklendi.\n	Store: %d files, profile: %d files restored.\n
+Geri yüklenemeyen öğe var, ilki: 	Some items could not be restored, first:
+Uyarı: kayıt defteri içe aktarılamadı.\n	Warning: the registry could not be imported.\n
+\nGeri yükleme bitti. Güncel durum:\n\n	\nRestore finished. Current status:\n\n
+\nSorun olursa önceki hâle dönmek için şu yedeği geri yükleyin:\n	\nIf anything goes wrong, restore this backup to return to the previous state:\n
+Değişikliğin tam etkili olması için bilgisayarı yeniden başlatmanız önerilir.\n	Restarting the computer is recommended for the change to take full effect.\n
+Lisans kanalı tespit edilemedi. Soldaki listeden bir tür seçin.	The license channel could not be detected. Select a type from the list on the left.
+Sizin lisans kanalınız: 	Your license channel:
+  (listede işaretlendi)	  (marked in the list)
+   ◄ sizin lisansınız	   ◄ your license
+Kapat	Close
+Lisans Türleri	License Types
+Lisans Bilgisi (/dli)	License Information (/dli)
+Ayrıntılı Lisans Bilgisi (/dlv)	Detailed License Information (/dlv)
+Etkinleştirme Kimliği (boş = Windows, all = tümü):	Activation ID (empty = Windows, all = everything):
+KMS ana bilgisayar önbelleği etkinleştirildi.	KMS host caching enabled.
+KMS ana bilgisayar önbelleği devre dışı bırakıldı.	KMS host caching disabled.
+Etkinleştirme Aralığı (/sai)	Activation Interval (/sai)
+Aralık (dakika):	Interval (minutes):
+Etkinleştirme aralığı (dk):	Activation interval (min):
+Yenileme Aralığı (/sri)	Renewal Interval (/sri)
+Yenileme aralığı (dk):	Renewal interval (min):
+KMS Dinleme Portu (/sprt)	KMS Listening Port (/sprt)
+Port numarası:	Port number:
+KMS dinleme portu:	KMS listening port:
+KMS DNS yayınlama etkinleştirildi.	KMS DNS publishing enabled.
+KMS DNS yayınlama devre dışı bırakıldı.	KMS DNS publishing disabled.
+KMS önceliği normal olarak ayarlandı.	KMS priority set to normal.
+KMS önceliği düşük olarak ayarlandı.	KMS priority set to low.
+Windows Lisans Yöneticisi\n\nslmgr.vbs işlevlerinin WMI üzerinden C++ ile yeniden yazımı; lisans deposu yedekleme ve geri yükleme dahil.\nKomutlar Windows Yazılım Lisans Hizmeti (SoftwareLicensingService / SoftwareLicensingProduct) ile çalışır.\n\nAçık kaynak (MIT lisansı).	Windows License Manager\n\nA C++ reimplementation of slmgr.vbs functionality over WMI, including license store backup and restore.\nCommands go to the Windows Software Licensing Service (SoftwareLicensingService / SoftwareLicensingProduct).\n\nOpen source (MIT license).
+Hakkında	About
+&Dosya	&File
+Çıktıyı kopyala	Copy output
+Çıktıyı temizle	Clear output
+Çıkış	Exit
+&Lisans	&License
+Lisans bilgisini göster (/dli)...	Show license information (/dli)...
+Ayrıntılı lisans bilgisi (/dlv)...	Detailed license information (/dlv)...
+Bitiş tarihini göster (/xpr)...	Show expiration date (/xpr)...
+Ürün anahtarı yükle (/ipk)...	Install product key (/ipk)...
+Windows'u etkinleştir (/ato)...	Activate Windows (/ato)...
+Ürün anahtarını kaldır (/upk)...	Uninstall product key (/upk)...
+Anahtarı kayıt defterinden sil (/cpky)	Clear key from registry (/cpky)
+&Yedekleme	&Backup
+Lisansı yedekle...	Back up license...
+Yedekten geri yükle...	Restore from backup...
+&KMS İstemcisi	&KMS Client
+KMS sunucusu ayarla (/skms)...	Set KMS server (/skms)...
+KMS sunucusu ayarını temizle (/ckms)...	Clear KMS server setting (/ckms)...
+KMS arama etki alanı ayarla (/skms-domain)...	Set KMS lookup domain (/skms-domain)...
+KMS arama etki alanını temizle (/ckms-domain)...	Clear KMS lookup domain (/ckms-domain)...
+KMS ana bilgisayar önbelleğini etkinleştir (/skhc)	Enable KMS host caching (/skhc)
+KMS ana bilgisayar önbelleğini devre dışı bırak (/ckhc)	Disable KMS host caching (/ckhc)
+Etkinleştirme türü (/act-type)...	Activation type (/act-type)...
+K&MS Sunucusu	K&MS Server
+Etkinleştirme aralığı (/sai)...	Activation interval (/sai)...
+Yenileme aralığı (/sri)...	Renewal interval (/sri)...
+Dinleme portu (/sprt)...	Listening port (/sprt)...
+DNS yayınlamayı etkinleştir (/sdns)	Enable DNS publishing (/sdns)
+DNS yayınlamayı devre dışı bırak (/cdns)	Disable DNS publishing (/cdns)
+Normal öncelik (/spri)	Normal priority (/spri)
+Düşük öncelik (/cpri)	Low priority (/cpri)
+&Çevrimdışı	&Offline
+Kurulum kimliğini göster (/dti)...	Show installation ID (/dti)...
+Onay kimliği gir (/atp)...	Enter confirmation ID (/atp)...
+&Rearm	&Rearm
+Windows rearm (/rearm)	Windows rearm (/rearm)
+Uygulama rearm (/rearm-app)...	Application rearm (/rearm-app)...
+SKU rearm (/rearm-sku)...	SKU rearm (/rearm-sku)...
+L&isans Dosyaları	License &Files
+Lisans dosyası yükle (/ilc)...	Install license file (/ilc)...
+Sistem lisanslarını yeniden yükle (/rilc)	Reinstall system licenses (/rilc)
+Y&ardım	&Help
+Kullanım kılavuzu (tüm özellikler)	User guide (all features)
+Lisans türleri...	License types...
+Windows Lisans Yöneticisi	Windows License Manager
+WMI bağlantısı kurulamadı: 	Could not connect to WMI:
+Hata	Error
+Durum	Status
+Ayrıntılı	Detailed
+Etkinleştir	Activate
+Yedekle	Back Up
+Geri Yükle	Restore
+Kılavuz	Guide
