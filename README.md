@@ -4,6 +4,8 @@
 
 <p align="center"><img src="docs/icon.png" width="128" alt="icon"></p>
 
+<p align="center"><img src="docs/screenshot.png" width="760" alt="screenshot"></p>
+
 A graphical Windows licensing tool written in C++ (Win32 + WMI). It reimplements what `slmgr.vbs` does,
 without VBScript, and adds license-store **backup / restore**, a built-in **user guide** and a
 **license types** reference. English and Turkish UI (auto-detected, switchable from the menu).

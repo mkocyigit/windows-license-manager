@@ -4,6 +4,8 @@
 
 <p align="center"><img src="docs/icon.png" width="128" alt="simge"></p>
 
+<p align="center"><img src="docs/screenshot.png" width="760" alt="screenshot"></p>
+
 C++ (Win32 + WMI) ile yazılmış, grafik arayüzlü bir Windows lisans yönetim aracı. `slmgr.vbs` dosyasının
 yaptığı işleri VBScript kullanmadan, doğrudan Windows Yazılım Lisans Hizmeti'ne (WMI) bağlanarak yapar.
 Ek olarak lisans deposunu **yedekleme / geri yükleme**, yerleşik **kullanım kılavuzu** ve ayrıntılı bir
