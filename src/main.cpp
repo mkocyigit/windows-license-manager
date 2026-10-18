@@ -754,6 +754,10 @@ static void CmdIlc() {
     wstring filter = wstring(T(L"Lisans dosyaları (*.xrm-ms)")) + L'\0' + L"*.xrm-ms" + L'\0' + T(L"Tüm dosyalar") + L'\0' + L"*.*" + L'\0';
     ofn.lpstrFilter = filter.c_str();
     ofn.lpstrFile = file; ofn.nMaxFile = MAX_PATH;
+    wchar_t dir[MAX_PATH];
+    if (GetModuleFileNameW(nullptr, dir, MAX_PATH)) {
+        if (wchar_t* s = wcsrchr(dir, L'\\')) { *s = 0; ofn.lpstrInitialDir = dir; }
+    }
     ofn.Flags = OFN_FILEMUSTEXIST | OFN_PATHMUSTEXIST;
     if (!GetOpenFileNameW(&ofn)) return;
     IWbemClassObject* svc = GetService();
@@ -930,9 +934,19 @@ static bool BackupTo(const wstring& dir) {
     return haveA && a.fail + b.fail == 0 && rc == 0 && wrote && started;
 }
 
+static int CALLBACK PickFolderCb(HWND h, UINT msg, LPARAM, LPARAM data) {
+    if (msg == BFFM_INITIALIZED) SendMessageW(h, BFFM_SETSELECTIONW, TRUE, data);
+    return 0;
+}
+
 static bool PickFolder(const wchar_t* title, wstring& out) {
+    wchar_t exe[MAX_PATH];
+    DWORD n = GetModuleFileNameW(nullptr, exe, MAX_PATH);
+    wchar_t* slash = wcsrchr(exe, L'\\');
+    if (n && slash) *slash = 0; else exe[0] = 0;
     BROWSEINFOW bi = {};
     bi.hwndOwner = g_main; bi.lpszTitle = title;
+    bi.lpfn = PickFolderCb; bi.lParam = (LPARAM)exe;
     bi.ulFlags = BIF_RETURNONLYFSDIRS | BIF_NEWDIALOGSTYLE;
     PIDLIST_ABSOLUTE pidl = SHBrowseForFolderW(&bi);
     if (!pidl) return false;
